@@ -1,0 +1,198 @@
+#color {
+    background-color: rgb(51, 8, 92); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+
+#main {
+    background-color: white;
+    width: 930px;
+    max-width: 100%;
+    border-radius: 36px;
+    display: flex;
+    padding: 24px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+#left {
+    flex: 1.2; 
+    padding: 40px 50px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#left h1 {
+    color: #242742; 
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+#left .subtitle {
+    color: #242742;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 32px;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 12px;
+    color: #242742;
+    font-size: 16px;
+}
+
+.feature-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 21px;
+    height: 21px;
+    background-image: url('images/icon-list.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #242742;
+    margin-bottom: 8px;
+}
+
+.signup-form input {
+    padding: 16px 24px;
+    border: 1px solid #9294a0;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 24px;
+    outline: none;
+    transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.signup-form input::placeholder {
+    color: #9294a0;
+}
+
+/* Default focus state when user clicks into the empty box */
+.signup-form input:focus {
+    border-color: #242742;
+}
+
+/* NEW: Changes input border and background when text is typed in */
+.signup-form input:not(:placeholder-shown) {
+    border-color: #ff6a3a;
+    background-color: rgba(255, 106, 58, 0.05);
+    color: #ff6a3a;
+}
+
+.submit-btn {
+    background-color: #242742;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover gradient state */
+.submit-btn:hover {
+    background: linear-gradient(205deg, #ff6a3a 0%, #ff527b 100%);
+    box-shadow: 0px 10px 20px rgba(255, 82, 123, 0.4);
+}
+
+/* NEW: Changes button to orange-pink gradient when user types in the input box */
+.signup-form input:not(:placeholder-shown) ~ .submit-btn {
+    background: linear-gradient(205deg, #ff6a3a 0%, #ff527b 100%);
+    box-shadow: 0px 10px 20px rgba(255, 82, 123, 0.3);
+}
+
+#right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.illustration-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px; 
+}
+
+@media screen and (max-width: 768px) {
+    #color {
+        display: block !important; 
+        min-height: unset !important;
+        padding: 0 !important;
+    }
+
+    #main {
+        display: flex !important;
+        flex-direction: column-reverse !important; 
+        width: 100% !important;
+        max-width: 100% !important;
+        border-radius: 0px !important;
+        padding: 0px !important;
+        box-shadow: none !important;
+    }
+
+    #right {
+        display: block !important; 
+        width: 100% !important;
+    }
+
+    .illustration-img {
+        display: block !important;
+        width: 100% !important;
+        height: 280px !important; 
+        border-radius: 0 0 24px 24px !important;
+    }
+
+    #left {
+        display: flex !important; 
+        width: 100% !important;
+        padding: 40px 24px !important; 
+    }
+
+    #left h1 {
+        font-size: 2.4rem !important; 
+        margin-bottom: 16px !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #left {
+        padding: 24px 16px !important;
+    }
+
+    #left h1 {
+        font-size: 1.9rem !important;
+    }
+
+    .illustration-img {
+        height: 180px !important; 
+    }
+}
