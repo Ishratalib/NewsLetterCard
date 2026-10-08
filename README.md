@@ -257,5 +257,3 @@ This project was built to practice:
 ## Author
 
 **Ishrat Talib**
-
-Frontend Web Development Project
