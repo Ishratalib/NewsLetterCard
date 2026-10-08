@@ -1,30 +1,12 @@
-# Newsletter Sign-Up Page 📧
+# Newsletter Sign-Up Page
 
 A responsive newsletter sign-up page built with **HTML5 and CSS3**. The project features a clean two-column desktop layout that adapts to mobile devices, along with interactive form styling and responsive design.
 
-## 🌐 Live Demo
+## Live Demo
 
 [View Live Demo](https://ishratalib.github.io/NewsLetterCard/)
 
----
-
-## ✨ Features
-
-* 📧 Newsletter email sign-up form
-* ✅ Built-in email validation using HTML5
-* 📝 Required email field validation
-* 🎨 Interactive input focus state
-* 🌈 Gradient button hover effect
-* ⚡ Button styling changes when the user enters text
-* 📱 Responsive design for desktop, tablet, and mobile
-* 🖼️ Custom SVG illustration
-* 🔘 Custom feature-list icons
-* 💫 Card shadow and rounded-corner design
-* 📐 Responsive layout using CSS media queries
-
----
-
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **HTML5** — Page structure and form elements
 * **CSS3** — Styling, layout, and responsive design
@@ -37,7 +19,23 @@ A responsive newsletter sign-up page built with **HTML5 and CSS3**. The project 
 
 ---
 
-## 📂 Project Structure
+## Features
+
+* Newsletter email sign-up form
+* Built-in email validation using HTML5
+* Required email field validation
+* Interactive input focus state
+* Gradient button hover effect
+* Button styling changes when the user enters text
+* Responsive design for desktop, tablet, and mobile
+* Custom SVG illustration
+* Custom feature-list icons
+* Card shadow and rounded-corner design
+* Responsive layout using CSS media queries
+
+---
+
+## Project Structure
 
 ```text
 Newsletter Sign-Up/
@@ -52,7 +50,7 @@ Newsletter Sign-Up/
 
 ---
 
-## 📄 File Overview
+## File Overview
 
 ### `index.html`
 
@@ -109,7 +107,7 @@ Contains the SVG assets used by the page:
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 This is a **static frontend project**, so no PHP, Node.js, database, or backend setup is required.
 
@@ -167,7 +165,7 @@ For development, **VS Code Live Server** is recommended:
 
 ---
 
-## 📱 Responsive Design
+## Responsive Design
 
 The page adapts to different screen sizes using CSS media queries.
 
@@ -190,7 +188,7 @@ The responsive design adjusts:
 
 ---
 
-## 🎨 Interactive Styling
+## Interactive Styling
 
 The email input has multiple visual states.
 
@@ -218,7 +216,7 @@ When the user hovers over the subscribe button, a gradient background and shadow
 
 ---
 
-## 📝 Form Validation
+## Form Validation
 
 The project uses **native HTML5 form validation** rather than JavaScript.
 
@@ -238,7 +236,7 @@ The browser checks that:
 
 ---
 
-## 🎯 Project Purpose
+## Project Purpose
 
 This project was built to practice:
 
@@ -256,12 +254,8 @@ This project was built to practice:
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Ishrat Talib**
 
 Frontend Web Development Project
-
-### Technologies
-
-`HTML5` · `CSS3` · `Flexbox` · `Responsive Design` · `SVG`
